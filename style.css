@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: -webkit-center;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu-links a {
+    color: black;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li:hover {
+    background-color: #e0dddd;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 20px;
+    user-select: none;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display:none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+        background-color: whitesmoke;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+    }
+}
+
+.wrapper {
+    position: relative;
+    margin-top: 170px;
+    max-width: 450px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px gray;
+}
+
+.wrapper.contact {
+    max-width: 600px;
+}
+
+.wrapper form {
+    margin-top: 30px;
+}
+
+.wrapper form .input-box {
+    height: 50px;
+    margin: 15px 0;
+}
+
+form .input-box input {
+    height: 100%;
+    width: 100%;
+    padding: 0 15px;
+    border: 1.5px solid #dbd8d8;
+    font-size: 15px;
+}
+
+.input-box.button input:hover {
+    cursor: pointer;
+}
+
+.input-box.contact {
+    padding-bottom: 90px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 80px;
+    border: 1.5px solid #dbd8d8;
+    font-size: 15px;
+    padding: 15px 15px 0;
+}
+
+.slider-container {
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width:  100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.back {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.back, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 14px;
+    color: whitesmoke;
+    font-weight: bold;
+    user-select: none;
+}
+
+.back:hover, .next:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.caption {
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.caption a {
+    color: whitesmoke;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.caption a:hover {
+    cursor: pointer;
+    color: black;
+    background-color: unset;
+    transition: ease-in-out 1s;
+}
+
+.page {
+    display: inline-block;
+    margin: 0 2px;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    background-color: #d6d6d6;
+    border-radius: 50px;
+}
+
+.active, .page:hover {
+    background-color: #807f7f;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.container {
+    width: 100%;
+
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about p {
+    color: #555;
+}
+
+.about .small {
+    font-weight: 600;
+}
+
+.about-img {
+    padding: 30px;
+}
+
+.about-img img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-position: right;
+}
+
+.about-text {
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+}
+
+.mainpic {
+    height: 300px;
+}
+
+.mainpic:hover {
+    cursor: pointer;
+}

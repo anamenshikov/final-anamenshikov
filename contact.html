@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>contact</title>
+</head>
+<body onload='document.f1.t1.focus()'>
+<header>
+    <nav class="navbar">
+        <div class="logo">არტ გალერეა</div>
+        <ul class="menu-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="gallery.html">გალერეა</a></li>
+                <li><a href="contact.html">კონტაქტი</a></li>
+                <li><a href="login.html">ავტორიზაცია</a></li>
+                <li><a href="registration.html">რეგისტრაცია</a></li>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div class="wrapper contact">
+    <h2>დაგვიკავშირდით:</h2>
+    <div class="text" style="text-align: left; margin-top: 20px">
+        <p><b>მისამართი:</b> ბუდაპეშტის ქუჩა 12 <br> <b>ტელეფონის ნომერი:</b> +995 32 2233435 <br> <b>სამუშაო საათები:</b> ორშ-პარ 10:00-19:00</p>
+    </div>
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="სახელი">
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="გვარი">
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="ელ-ფოსტა" required>
+        </div>
+        <div class="input-box contact">
+            <textarea placeholder="მოგვწერეთ..."></textarea>
+        </div>
+        <div class="input-box button">
+            <input type="submit" value="გაგზავნა">
+        </div>
+    </form>
+</div>
+</body>
+</html>

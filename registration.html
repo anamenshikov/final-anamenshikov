@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>registration</title>
+</head>
+<body onload='document.f1.t1.focus()'>
+    <header>
+        <nav class="navbar">
+            <div class="logo">არტ გალერეა</div>
+            <ul class="menu-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="index.html">მთავარი</a></li>
+                    <li><a href="gallery.html">გალერეა</a></li>
+                    <li><a href="contact.html">კონტაქტი</a></li>
+                    <li><a href="login.html">ავტორიზაცია</a></li>
+                    <li><a href="registration.html">რეგისტრაცია</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <h2>რეგისტრაცია</h2>
+        <form name="f1" action="#">
+            <div class="input-box">
+                <input type="text" placeholder="მომხმარებელი" required>
+            </div>
+            <div class="input-box">
+                <input type="text" name="t1" placeholder="ელ-ფოსტა" id="email" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="პაროლი" id="ps1" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="გაიმეორეთ პაროლი" id="ps2" required>
+            </div>
+            <div class="input-box">
+                <input type="datetime-local" value="2022-06-13T20:00" placeholder="თარიღი" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="ქვეყანა" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="ქალაქი" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="ტელეფონის ნომერი" required>
+            </div>
+            <div onclick="checkPass();checkEmail(document.f1.t1);" class="input-box button">
+                <input type="submit" value="დარეგისტრირდი ახლა">
+            </div>
+            <div class="text">
+                <p>უკვე ხართ მომხმარებელი? <b><a href="login.html">შესვლა</a></b></p>
+            </div>
+        </form>
+    </div>
+    <script src="validate.js"></script>
+</body>
+</html>

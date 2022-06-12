@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>login</title>
+</head>
+<body onload='document.f1.t1.focus()'>
+<header>
+    <nav class="navbar">
+        <div class="logo">არტ გალერეა</div>
+        <ul class="menu-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="gallery.html">გალერეა</a></li>
+                <li><a href="contact.html">კონტაქტი</a></li>
+                <li><a href="login.html">ავტორიზაცია</a></li>
+                <li><a href="registration.html">რეგისტრაცია</a></li>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div class="wrapper">
+    <h2>ავტორიზაცია</h2>
+    <form name="f1" action="#">
+        <div class="input-box">
+            <input type="text" name="t1" placeholder="ელ-ფოსტა" id="email" required>
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="პაროლი" required>
+        </div>
+        <div onclick="checkEmail(document.f1.t1);" class="input-box button">
+            <input type="submit" value="შესვლა">
+        </div>
+        <div class="text">
+            <p>არ ხართ მომხმარებელი? <b><a href="registration.html.html">დარეგისტრირდი</a></b></p>
+        </div>
+    </form>
+</div>
+<script src="validate.js"></script>
+</body>
+</html>

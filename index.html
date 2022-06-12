@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Art gallery</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">არტ გალერეა</div>
+            <ul class="menu-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="index.html">მთავარი</a></li>
+                    <li><a href="gallery.html">გალერეა</a></li>
+                    <li><a href="contact.html">კონტაქტი</a></li>
+                    <li><a href="login.html">ავტორიზაცია</a></li>
+                    <li><a href="registration.html">რეგისტრაცია</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider-container">
+        <div class="slide">
+            <img src="images/img1.jpeg">
+            <div class="caption"><a href="gallery.html">იხილეთ ნიკო ფიროსმანის ნახატები</a></div>
+        </div>
+
+        <div class="slide">
+            <img src="images/img2.jpeg">
+            <div class="caption"><a href="gallery.html">ელენე ახვლედიანის ნახატები</a></div>
+        </div>
+
+        <div class="slide">
+            <img src="images/img3.jpeg">
+            <div class="caption"><a href="gallery.html">მერაბ აბრამიშვილი ნახატები</a></div>
+        </div>
+        <div class="slide">
+            <img src="images/img4.jpeg">
+            <div class="caption"><a href="gallery.html">რუსუდან ფეტვიაშვილი ნახატები</a></div>
+        </div>
+        <div class="slide">
+            <img src="images/img5.jpeg">
+            <div class="caption"><a href="gallery.html">დავით კაკაბაძე ნახატები</a></div>
+        </div>
+        <a class="back" onclick="moveSlide(-1)">❮</a>
+        <a class="next" onclick="moveSlide(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="page" onclick="presentSlide(1)"></span>
+        <span class="page" onclick="presentSlide(2)"></span>
+        <span class="page" onclick="presentSlide(3)"></span>
+        <span class="page" onclick="presentSlide(4)"></span>
+        <span class="page" onclick="presentSlide(5)"></span>
+    </div>
+    <script src="slides.js"></script>
+    <section class="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">ჩვენ შესახებ</p>
+                <h2>ჩვენ ვინახავთ ქართველი მხატვრების ნამუშევრებს</h2>
+                <p>
+                    გალერეა “ვანდა” (ყოფილი გალერეა “ჰობი”) – ერთ-ერთი პირველი კერძო გალერეა საქართველოში,
+                    განთავსებულია თბილისის ისტორიულ უბანში –
+                    სოლოლაკში. იგი დაფუძნდა 1993 წელს ვანდა მუჯირების მიერ.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="https://vandaart.gallery/wp-content/uploads/gallery_featured.jpg" alt="gallery" />
+            </div>
+        </div>
+    </section>
+    <div class="header">
+        <h1>არტ გალერეა</h1>
+        <p>იხილეთ ქართველი მხატვრების ნამუშევრები</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <a href="gallery.html"><img class="mainpic" src="images/gal1.jpeg"></a>
+            <a href="gallery.html"><img class="mainpic" src="images/gal5.jpeg"></a>
+        </div>
+        <div class="column">
+            <a href="gallery.html"><img class="mainpic" src="images/gal2.jpeg"></a>
+            <a href="gallery.html"><img class="mainpic" src="images/gal6.jpeg"></a>
+        </div>
+        <div class="column">
+            <a href="gallery.html"><img class="mainpic" src="images/gal3.jpeg"></a>
+            <a href="gallery.html"><img class="mainpic" src="images/gal7.jpeg"></a>
+        </div>
+        <div class="column">
+            <a href="gallery.html"><img class="mainpic" src="images/gal4.jpeg"></a>
+            <a href="gallery.html"><img class="mainpic" src="images/gal8.jpeg"></a>
+        </div>
+    </div>
+</body>
+</html>
